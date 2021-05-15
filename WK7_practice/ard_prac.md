@@ -1,6 +1,8 @@
 # Arduino Practice
+#### Week 7 Session
 
-> By [1487quantum](https://github.com/1487quantum)
+![SOAR](assets/soar.png)
+
 
 * Just a quick way to practice prototyping and the concepts with the Arduino, and to learn a few new components and sensors!
 * For this practice, please use **Tinkercad** **Circuit** to try them out. (If you have the actual components, it would be recommended to use the actual hardware instead of the simulated one.)
@@ -10,7 +12,7 @@
 
 ## 1. Waving RGB Lighting
 
-![](assets/act1_sch.jpg)
+![](assets/act1_sch.PNG)
 
 Fascinated with the LED strips on speakers or shopping more? Here’s your chance to create something similar! Let’s try out fading the RGB LED with some sine wave! Wire the schematics as shown.
 
@@ -42,7 +44,7 @@ Fade the LEDs in a half cycle sinusoidal waveform for `800ms` and then off in th
 
 ## 2. 7 Segment Display (Common Anode)
 
-![](assets/act2_sch.jpg)
+![](assets/act2_sch.PNG)
 
 Remember the traffic light digits counting down when we are crossing the road? We would be trying out this **common anode** 7 segment display, which activates the LED when the pin is grounded! Wire the schematics as shown.
 
@@ -83,7 +85,7 @@ Code for A – F (a hexadecimal extension), and countdown from F to 0.
 
 ## 3. Motion Activated Light (MAL)
 
-![](assets/act3_sch.jpg)
+![](assets/act3_sch.PNG)
 
 In order to save power, some lights in the public area are equipped with a PIR sensor to brighten the area when motion is detected, else it would be dim. For this activity, we would be doing something similar: Turn on the LED for 3 seconds! Wire the schematics as shown.
 
@@ -108,7 +110,7 @@ Trigger the LED (using the **polling method**) to turn on for 3 seconds when mot
 
 ### Task C
 
-Trigger the LED (using the `interrupt method`) to turn on for 5 seconds when motion is detected.
+Trigger the LED (using the `interrupt method`) to turn on for 3 seconds when motion is detected.
 
 * Recall what is **interrupt**, and how is it implemented.
 * Write a function (that would be called via the `Interrupt Service Routine, ISR`) to update the state of the LED when motion is detected using `attachInterrupt()`.
@@ -131,7 +133,7 @@ Trigger the LED (using the `interrupt method`) to turn on for 5 seconds when mot
 
 
 
-**Changelog**
+## Changelog
 
 **V1.0 (22/10/20)**
 
@@ -142,3 +144,9 @@ Trigger the LED (using the `interrupt method`) to turn on for 5 seconds when mot
 * Added more details for the questions
 * Split the sections up
 * Updated images, added graphs
+
+**V1.2 (29/10/20)**
+
+- Fix some typos
+- Fix inconsistencies between questions and answers
+- Standardize code formatting
